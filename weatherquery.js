@@ -14,7 +14,7 @@ document.getElementById("mybt").onclick = function() {
         unit='metric'
     }
     console.log(unit);
-   fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&units=${unit}&appid=c9a08f8b891702025afae4a67e2a65f0`)
+   fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&units=${unit}&appid=access_key`)
    .then(data=>{
        console.log(data)
        return data.json()
